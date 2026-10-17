@@ -1,0 +1,112 @@
+/* ==========================================================================
+   GOLDEN HOUR — design tokens
+   Shared by marketing, client portal and trainer admin (one product family)
+   ========================================================================== */
+:root {
+  /* Palette */
+  --ink: #0E0D0B;
+  --ink-2: #12110D;
+  --char: #17150F;
+  --char-2: #1D1A14;
+  --char-3: #25211A;
+  --bone: #F2EBDD;
+  --bone-80: rgba(242, 235, 221, .8);
+  --bone-60: rgba(242, 235, 221, .6);
+  --bone-40: rgba(242, 235, 221, .4);
+  --bone-20: rgba(242, 235, 221, .2);
+  --bone-12: rgba(242, 235, 221, .12);
+  --bone-8: rgba(242, 235, 221, .08);
+  --bone-4: rgba(242, 235, 221, .04);
+  --amber: #E8A33D;
+  --amber-hi: #F4BE6A;
+  --amber-20: rgba(232, 163, 61, .2);
+  --amber-12: rgba(232, 163, 61, .12);
+  --ember: #C8553D;
+  --ember-hi: #E07A62;
+  --ember-15: rgba(200, 85, 61, .15);
+  --moss: #3E4A3A;
+  --moss-hi: #9DB38E;
+  --moss-20: rgba(157, 179, 142, .18);
+  --sky: #8FB0CC;
+  --sky-15: rgba(143, 176, 204, .15);
+
+  /* Surfaces */
+  --bg: var(--ink);
+  --surface: var(--char);
+  --surface-2: var(--char-2);
+  --surface-3: var(--char-3);
+  --glass: rgba(23, 21, 15, .62);
+  --glass-strong: rgba(18, 17, 13, .82);
+  --line: var(--bone-8);
+  --line-2: var(--bone-12);
+  --text: var(--bone);
+  --text-2: var(--bone-60);
+  --text-3: var(--bone-40);
+  --accent: var(--amber);
+  --on-accent: #1A1408;
+
+  /* Type */
+  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --fs-display: clamp(4rem, 12vw, 13rem);
+  --fs-hero: clamp(3.25rem, 9vw, 9.5rem);
+  --fs-h1: clamp(2.75rem, 6vw, 6rem);
+  --fs-h2: clamp(2.25rem, 4.4vw, 4.25rem);
+  --fs-h3: clamp(1.6rem, 2.4vw, 2.25rem);
+  --fs-h4: 1.35rem;
+  --fs-lead: clamp(1.1rem, 1.35vw, 1.3rem);
+  --fs-body: 1rem;
+  --fs-sm: .875rem;
+  --fs-xs: .75rem;
+  --fs-micro: .6875rem;
+
+  /* Space */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 144px;
+  --gutter: clamp(16px, 4vw, 56px);
+  --maxw: 1440px;
+  --section: clamp(88px, 11vw, 160px);
+
+  /* Shape */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r: 14px;
+  --r-lg: 22px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* Depth */
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, .03) inset, 0 10px 30px -12px rgba(0, 0, 0, .6);
+  --shadow-2: 0 1px 0 rgba(255, 255, 255, .05) inset, 0 30px 80px -20px rgba(0, 0, 0, .75);
+  --glow-amber: 0 0 0 1px rgba(232, 163, 61, .5), 0 10px 40px -10px rgba(232, 163, 61, .55);
+  --blur: saturate(140%) blur(18px);
+
+  /* Motion */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in-out: cubic-bezier(.76, 0, .24, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --t-fast: .18s;
+  --t: .35s;
+  --t-slow: .8s;
+
+  /* Layout (apps) */
+  --sidebar-w: 264px;
+  --topbar-h: 64px;
+  --tabbar-h: 68px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+
+  color-scheme: dark;
+}
+
+/* Technique colours as utility hooks */
+[data-tech="t-recall"] { --tc: #E8A33D; }
+[data-tech="t-lead"] { --tc: #7FA77E; }
+[data-tech="t-impulse"] { --tc: #E07A62; }
+[data-tech="t-settle"] { --tc: #8FB0CC; }
+[data-tech="t-social"] { --tc: #B497E6; }
+[data-tech="t-reinf"] { --tc: #E5BE4A; }
+[data-tech="t-focus"] { --tc: #4FB8AA; }
+[data-tech="t-leave"] { --tc: #EE8A6B; }

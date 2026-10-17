@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — Linda’s Dog Training</title>
+  <meta name="description" content="Get in touch with Linda about training your dog.">
+  <meta name="theme-color" content="#F6F6F2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23111214' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23D4FF3A' stroke='%23111214' stroke-width='2'/%3E%3Cpath d='M16 1v8M16 23v8M1 16h8M23 16h8' stroke='%23111214' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400..700&family=Inter:wght@400..700&family=JetBrains+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/vendor/lenis.css">
+  <link rel="stylesheet" href="/v3/assets/css/tokens.css">
+  <link rel="stylesheet" href="/v3/assets/css/base.css">
+  <link rel="stylesheet" href="/v3/assets/css/components.css">
+  <link rel="stylesheet" href="/v3/assets/css/site.css">
+  <script>document.documentElement.classList.add('js');if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('rm');</script>
+</head>
+<body class="site" data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header data-nav></header>
+  <main id="main">
+
+    <section class="page-hero wrap">
+      <div class="page-hero__meta mono"><span class="idx">Contact</span><span>Replies by email</span></div>
+      <h1 data-split>Let’s talk dogs.</h1>
+    </section>
+    <section class="wrap" style="padding-bottom:var(--section)">
+      <div class="contact-grid">
+        <div class="form-card" id="contact-card" data-reveal>
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Your name</label><input class="input" id="c-name" name="name" autocomplete="name" data-v="req" placeholder="Sarah Thompson"><span class="field__error"><i data-lucide="circle-alert"></i> Please tell us your name.</span></div>
+              <div class="field"><label for="c-email">Email</label><input class="input" id="c-email" name="email" type="email" autocomplete="email" data-v="req email" placeholder="you@example.co.nz"><span class="field__error"><i data-lucide="circle-alert"></i> Enter a valid email address.</span></div>
+              <div class="field"><label for="c-phone">Phone <span class="muted">(optional)</span></label><input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel" data-v="phone" placeholder="+64 21 …"><span class="field__error"><i data-lucide="circle-alert"></i> Use a NZ number, e.g. +64 21 123 4567.</span></div>
+              <div class="field"><label for="c-dog">Dog’s name <span class="muted">(optional)</span></label><input class="input" id="c-dog" name="dog" placeholder="Bramble"></div>
+              <div class="field span-2"><label for="c-topic">What would you like help with?</label>
+                <select class="select" id="c-topic" name="topic" data-v="req"><option value="">Choose a topic</option><option>Recall</option><option>Loose-lead walking</option><option>Puppy foundations</option><option>Settling &amp; calm</option><option>Something else</option></select>
+                <span class="field__error"><i data-lucide="circle-alert"></i> Choose a topic.</span></div>
+              <div class="field span-2"><label for="c-msg">Message</label><textarea class="textarea" id="c-msg" name="message" maxlength="600" data-v="req min10" placeholder="Tell Linda a little about your dog and what you’re working on."></textarea>
+                <div class="row row--between"><span class="field__error" style="margin:0"><i data-lucide="circle-alert"></i> A few more words, please (10+ characters).</span><span class="mono muted" id="c-count" style="margin-left:auto">0/600</span></div></div>
+              <div class="span-2"><label class="check check--plain"><input type="checkbox" name="consent" data-v="req"><span class="check__box"><i data-lucide="check"></i></span><span class="check__text">I agree Linda can use these details to reply to my enquiry. <a class="link link--under" href="/v3/faq.html">How we handle privacy</a></span></label></div>
+            </div>
+            <div class="row row--between row--wrap" style="margin-top:28px"><span class="mono muted">Prototype · nothing is sent</span><button class="btn btn--accent btn--lg" type="submit" data-magnetic>Send enquiry <i data-lucide="arrow-right" class="btn-arrow"></i></button></div>
+          </form>
+        </div>
+        <aside style="display:grid;gap:32px;align-content:start">
+          <div class="info-list" data-reveal>
+            <div><span class="mono">Email</span><a class="link" href="mailto:hello@lindasdogtraining.co.nz">hello@lindasdogtraining.co.nz</a></div>
+            <div><span class="mono">Region</span><span>New Zealand · <span class="ph">[areas TBC]</span></span></div>
+            <div><span class="mono">Hours</span><span><span class="ph">[To be supplied]</span></span></div>
+            <div><span class="mono">Clients</span><span>Already training with Linda? <a class="link link--under" href="/v3/login.html">Log in to your portal</a></span></div>
+          </div>
+          <div class="hv" data-hover-video data-reveal style="aspect-ratio:4/3"><img src="/shared/media/img/50686-40.jpg" alt="Border collie receiving a treat from a hand" loading="lazy"><video muted playsinline loop preload="none" data-src="/shared/media/video/50686.mp4" data-hoverplay></video><span class="hv__play"><i data-lucide="play"></i></span></div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+  <footer data-footer></footer>
+  <script src="/shared/vendor/gsap.min.js"></script>
+  <script src="/shared/vendor/ScrollTrigger.min.js"></script>
+  <script src="/shared/vendor/SplitText.min.js"></script>
+  <script src="/shared/vendor/Flip.min.js"></script>
+  <script src="/shared/vendor/lenis.min.js"></script>
+  <script src="/shared/vendor/lucide.min.js"></script>
+  <script src="/shared/data.js"></script>
+  <script src="/v3/assets/js/core.js"></script>
+  <script src="/v3/assets/js/site.js"></script>
+</body>
+</html>

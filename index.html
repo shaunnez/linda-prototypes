@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Linda's Dog Training — Prototype Directions</title>
+<meta name="description" content="Three design directions for Linda's Dog Training platform: marketing site, client portal and trainer admin.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0B0A;--fg:#F3F1EA;--mut:#9A978E;--line:rgba(243,241,234,.12);--v1:#E8A33D;--v2:#FF5A36;--v3:#D4FF3A}
+*{box-sizing:border-box;margin:0}
+html{background:var(--bg);color:var(--fg);font-family:"Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{min-height:100vh;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1440px;margin:0 auto;padding:0 clamp(16px,4vw,56px)}
+header{display:flex;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.mono{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+h1{font-size:clamp(2.6rem,7.5vw,7.5rem);line-height:.92;letter-spacing:-.045em;font-weight:600;padding:clamp(48px,9vw,120px) 0 28px;max-width:14ch}
+h1 em{font-style:normal;color:var(--mut)}
+.lede{max-width:62ch;color:var(--mut);font-size:clamp(1rem,1.3vw,1.2rem);line-height:1.55;padding-bottom:clamp(40px,6vw,80px)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-bottom:80px}
+@media (max-width:1100px){.grid{grid-template-columns:1fr}}
+.card{position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#121210;display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--c) 60%,transparent)}
+.media{position:relative;aspect-ratio:4/3;overflow:hidden}
+.media video,.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.card:hover .media video{transform:scale(1.05)}
+.media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,11,10,.85))}
+.tag{position:absolute;left:18px;top:18px;z-index:2;background:var(--c);color:#111;border-radius:999px;padding:6px 12px;font:500 12px "JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase}
+.title{position:absolute;left:20px;bottom:16px;z-index:2;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:600;letter-spacing:-.03em;line-height:1}
+.body{padding:20px;display:flex;flex-direction:column;gap:16px;flex:1}
+.body p{color:var(--mut);line-height:1.55;font-size:15px}
+.swatches{display:flex;gap:6px}.swatches i{width:22px;height:22px;border-radius:50%;border:1px solid var(--line)}
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:auto}
+.links a{border:1px solid var(--line);border-radius:14px;padding:14px 12px;display:flex;flex-direction:column;gap:6px;font-weight:500;transition:background .25s,border-color .25s,color .25s}
+.links a span{font:400 11px "JetBrains Mono",monospace;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.links a:hover{background:var(--c);color:#111;border-color:var(--c)}.links a:hover span{color:#111}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(24px);animation:in .9s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes in{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}.card,.media video{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><strong>Linda's Dog Training</strong><span class="mono">Prototype review · Oct 2026</span></header>
+  <h1 class="reveal">Three directions. <em>One platform.</em></h1>
+  <p class="lede reveal" style="animation-delay:.1s">Each direction is a complete clickable prototype: public website and Training Academy, the private client portal, and Linda's trainer PWA with recording, AI-drafted review, private sharing and the WhatsApp archive inbox. Nothing is connected to real services — every flow is simulated so you can click through it end to end.</p>
+  <section class="grid">
+    <article class="card reveal" style="--c:var(--v1);animation-delay:.15s">
+      <div class="media"><video src="/shared/media/video/4839.mp4" poster="/shared/media/img/4839-40.jpg" muted playsinline autoplay loop></video><span class="tag">Direction 01</span><h2 class="title">Golden Hour</h2></div>
+      <div class="body">
+        <div class="swatches"><i style="background:#0E0D0B"></i><i style="background:#F2EBDD"></i><i style="background:#E8A33D"></i><i style="background:#C8553D"></i><i style="background:#3E4A3A"></i></div>
+        <p>Cinematic and editorial. Dusk light, serif headlines and film grain, with scroll-scrubbed footage that plays like a nature documentary.</p>
+        <nav class="links"><a href="/v1/index.html">Website<span>Public</span></a><a href="/v1/portal/index.html">Portal<span>Client</span></a><a href="/v1/admin/index.html">Admin<span>Trainer</span></a></nav>
+      </div>
+    </article>
+    <article class="card reveal" style="--c:var(--v2);animation-delay:.25s">
+      <div class="media"><video src="/shared/media/video/10365.mp4" poster="/shared/media/img/10365-40.jpg" muted playsinline autoplay loop></video><span class="tag">Direction 02</span><h2 class="title">Paws &amp; Play</h2></div>
+      <div class="body">
+        <div class="swatches"><i style="background:#FFF6E9"></i><i style="background:#FF5A36"></i><i style="background:#FFC93C"></i><i style="background:#1F7A4D"></i><i style="background:#8EC5FF"></i></div>
+        <p>Bright, joyful and tactile. Chunky type, sticker-style cards and bouncy motion, with a pinned recall story you scrub as you scroll.</p>
+        <nav class="links"><a href="/v2/index.html">Website<span>Public</span></a><a href="/v2/portal/index.html">Portal<span>Client</span></a><a href="/v2/admin/index.html">Admin<span>Trainer</span></a></nav>
+      </div>
+    </article>
+    <article class="card reveal" style="--c:var(--v3);animation-delay:.35s">
+      <div class="media"><video src="/shared/media/video/1552.mp4" poster="/shared/media/img/1552-40.jpg" muted playsinline autoplay loop></video><span class="tag">Direction 03</span><h2 class="title">Field Notes</h2></div>
+      <div class="body">
+        <div class="swatches"><i style="background:#F6F6F2"></i><i style="background:#111214"></i><i style="background:#D4FF3A"></i><i style="background:#2F6B4F"></i><i style="background:#6B6F76"></i></div>
+        <p>Precise and premium. Apple-style sticky video, a 3D phone walkthrough, hairline grids and a Linear-grade admin with a command palette.</p>
+        <nav class="links"><a href="/v3/index.html">Website<span>Public</span></a><a href="/v3/portal/index.html">Portal<span>Client</span></a><a href="/v3/admin/index.html">Admin<span>Trainer</span></a></nav>
+      </div>
+    </article>
+  </section>
+  <footer><span class="mono">Placeholder copy: Linda to supply bio, qualifications, prices &amp; testimonials</span><span class="mono">Stock footage: Mixkit (free licence)</span></footer>
+</div>
+</body>
+</html>

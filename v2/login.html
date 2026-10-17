@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Log in — Linda's Dog Training</title>
+<meta name="description" content="Passwordless sign-in to your private dog training portal.">
+<meta name="theme-color" content="#FFF6E9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%23FF5A36' stroke='%231B1B1B' stroke-width='3'/%3E%3Cg transform='translate(8 8)' fill='%231B1B1B'%3E%3Cpath d='M16 15.2c-4.4 0-8.8 5.3-8.8 9 0 2.7 2.2 3.8 4.4 3.8 1.8 0 3-.9 4.4-.9s2.6.9 4.4.9c2.2 0 4.4-1.1 4.4-3.8 0-3.7-4.4-9-8.8-9z'/%3E%3Cellipse cx='6.6' cy='13.4' rx='2.9' ry='3.7'/%3E%3Cellipse cx='12.2' cy='7.8' rx='2.9' ry='3.9'/%3E%3Cellipse cx='19.8' cy='7.8' rx='2.9' ry='3.9'/%3E%3Cellipse cx='25.4' cy='13.4' rx='2.9' ry='3.7'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..700&display=swap">
+<link rel="stylesheet" href="/v2/assets/css/tokens.css">
+<link rel="stylesheet" href="/v2/assets/css/base.css">
+<link rel="stylesheet" href="/v2/assets/css/components.css">
+<link rel="stylesheet" href="/v2/assets/css/site.css">
+<link rel="stylesheet" href="/v2/assets/css/pages.css">
+<script>(function(d){d.classList.add('js');try{if(sessionStorage.getItem('v2:pt'))d.classList.add('pt-in')}catch(e){}setTimeout(function(){if(!window.__siteReady){d.classList.remove('js','pt-in')}},3500)})(document.documentElement)</script>
+</head>
+<body class="site login-page" data-page="login">
+<a class="skip-link" href="#main">Skip to content</a>
+<header data-site-header></header>
+<main id="main">
+
+<div class="login-wrap">
+  <div class="login-art" aria-hidden="true">
+    <div class="arch"><video muted playsinline autoplay loop preload="metadata" poster="/shared/media/thumb/50683-40.jpg" src="/shared/media/vertical/50683.mp4"></video></div>
+    <span class="sticker la-1">Welcome back!</span>
+    <span class="sticker sticker--tomato la-2"><i data-lucide="lock"></i>Private to you</span>
+    <p class="la-quote">Every clip, note &amp; homework — right where you left it.</p>
+  </div>
+  <div class="login-main">
+    <div class="card login-card" data-reveal>
+      <span class="eyebrow"><span class="dot"><i data-lucide="key-round"></i></span>No passwords. Ever.</span>
+      <h1>Log in</h1>
+      <p class="muted" style="margin:0">We’ll email you a one-time magic link.</p>
+      <div class="seg" role="tablist" aria-label="Account type" data-who>
+        <button type="button" role="tab" aria-pressed="true" aria-selected="true" data-v="client"><i data-lucide="house"></i>Dog owner</button>
+        <button type="button" role="tab" aria-pressed="false" aria-selected="false" data-v="trainer"><i data-lucide="clipboard-list"></i>Trainer</button>
+      </div>
+      <form class="login-step is-on" data-step="email" novalidate>
+        <div class="field" style="margin-top:14px"><label class="label" for="l-email">Email address</label>
+          <div class="input-icon"><i data-lucide="mail"></i><input class="input" id="l-email" type="email" autocomplete="email" placeholder="sarah.t@example.co.nz" required></div>
+          <span class="err"><i data-lucide="alert-circle"></i>Enter the email Linda has on file</span></div>
+        <button class="btn btn--primary btn--lg btn--block" type="submit" style="margin-top:18px"><i data-lucide="wand-sparkles"></i><span data-btn-label>Send magic link</span></button>
+        <p class="small muted" style="margin:16px 0 0">Got an invitation link from your household? It works the same way — just open it on this device.</p>
+        <button type="button" class="link small" data-fill style="margin-top:8px">Use demo email</button>
+      </form>
+      <div class="login-step" data-step="sent" aria-live="polite">
+        <div class="envelope"><i data-lucide="mail-check"></i></div>
+        <h2 style="text-align:center;font-size:var(--fs-2xl)">Check your inbox</h2>
+        <p class="center muted" style="margin:0">We sent a sign-in link to <strong data-sent-to></strong>. It expires in 15 minutes.</p>
+        <div class="inbox-preview">
+          <span class="from"><span class="avatar" style="background:var(--tomato)">L</span>Linda’s Dog Training</span>
+          <span><strong>Your sign-in link</strong> — Tap to open your <span data-dest-label>portal</span>. If this wasn’t you, ignore this email.</span>
+        </div>
+        <a class="btn btn--ink btn--lg btn--block" href="/v2/portal/index.html" data-open-link><i data-lucide="external-link"></i>Open magic link (demo)</a>
+        <div class="row row--between" style="margin-top:14px"><button type="button" class="link small" data-back>Use a different email</button><button type="button" class="link small" data-resend>Resend</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script src="/shared/vendor/gsap.min.js"></script>
+<script src="/shared/vendor/ScrollTrigger.min.js"></script>
+<script src="/shared/vendor/SplitText.min.js"></script>
+<script src="/shared/vendor/lenis.min.js"></script>
+<script src="/shared/vendor/lucide.min.js"></script>
+<script src="/shared/data.js"></script>
+<script src="/v2/assets/js/core.js"></script>
+<script src="/v2/assets/js/site.js"></script>
+<script src="/v2/assets/js/pages.js"></script>
+</body>
+</html>

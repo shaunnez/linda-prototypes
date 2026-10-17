@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — Linda’s Dog Training</title>
+  <meta name="description" content="Get in touch with Linda about training your dog.">
+  <meta name="theme-color" content="#0E0D0B">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230E0D0B'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-style='italic' font-size='38' text-anchor='middle' fill='%23E8A33D'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/shared/vendor/lenis.css">
+  <link rel="stylesheet" href="/v1/assets/css/tokens.css">
+  <link rel="stylesheet" href="/v1/assets/css/base.css">
+  <link rel="stylesheet" href="/v1/assets/css/components.css">
+  <link rel="stylesheet" href="/v1/assets/css/marketing.css">
+</head>
+<body data-page="contact">
+  <div class="grain" aria-hidden="true"></div>
+  <main id="main">
+    <section class="phero wrap">
+      <div class="phero__glow"></div>
+      <p class="eyebrow eyebrow--amber">Contact</p>
+      <h1 class="phero__title serif" data-split data-split-now>Say <em>kia ora.</em></h1>
+    </section>
+    <section class="wrap" style="padding-bottom:var(--section)">
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <p class="lead">Tell Linda about your dog and what you’d love help with. She’ll reply personally.</p>
+          <dl>
+            <div><dt>Email</dt><dd><a href="mailto:hello@lindasdogtraining.co.nz">hello@lindasdogtraining.co.nz</a></dd></div>
+            <div><dt>Phone</dt><dd>+64 21 000 0000 <span class="ph-inline" style="font-size:.9rem">[placeholder]</span></dd></div>
+            <div><dt>Where</dt><dd><span class="ph-inline">[Service areas — to be supplied]</span></dd></div>
+          </dl>
+          <div class="callout callout--sky"><i data-lucide="shield-check"></i><div>Your details are only used to reply to you. <span class="ph-inline">[Privacy notice — to be supplied]</span></div></div>
+        </div>
+        <div class="form-card" id="form-card" data-reveal>
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field"><label class="field__label" for="c-name">Your name <span class="faint">Required</span></label><input class="input" id="c-name" autocomplete="name" data-validate="required"><span class="field__error"><i data-lucide="circle-alert"></i>Please tell us your name.</span></div>
+              <div class="field"><label class="field__label" for="c-email">Email <span class="faint">Required</span></label><input class="input" id="c-email" type="email" autocomplete="email" data-validate="required email"><span class="field__error"><i data-lucide="circle-alert"></i>Please enter a valid email.</span></div>
+              <div class="field"><label class="field__label" for="c-phone">Phone <span class="faint">Optional</span></label><input class="input" id="c-phone" type="tel" autocomplete="tel" placeholder="+64" data-validate="phone"><span class="field__error"><i data-lucide="circle-alert"></i>That number doesn’t look right.</span></div>
+              <div class="field"><label class="field__label" for="c-dog">Dog’s name &amp; age</label><input class="input" id="c-dog" placeholder="e.g. Bramble, 2"></div>
+              <div class="field full"><span class="field__label">What would you like help with?</span><div class="chip-set" id="interest" role="group" aria-label="Training interests"></div></div>
+              <div class="field full"><label class="field__label" for="c-msg">Tell us a little more <span class="faint">Required</span></label><textarea class="textarea" id="c-msg" data-validate="required min" data-min="20" placeholder="What’s going well, what’s tricky, and what you’d love to change."></textarea><span class="field__error"><i data-lucide="circle-alert"></i>A sentence or two (20+ characters) helps Linda prepare.</span></div>
+              <div class="field full"><label class="check check--nostrike"><input type="checkbox" id="c-consent"><span class="check__box"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="check__text">I’m happy for Linda to contact me about my enquiry.</span></label><span class="field__error"><i data-lucide="circle-alert"></i>Please tick so Linda can reply.</span></div>
+            </div>
+            <div class="row row--between row--wrap" style="margin-top:24px">
+              <span class="faint" style="font-size:.8125rem">No spam. No mailing list.</span>
+              <button class="btn btn--primary btn--lg btn--magnetic" type="submit"><span class="btn__label">Send message</span><i data-lucide="arrow-right"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="/shared/data.js"></script>
+  <script src="/v1/assets/js/core.js"></script>
+  <script src="/shared/vendor/gsap.min.js"></script>
+  <script src="/shared/vendor/ScrollTrigger.min.js"></script>
+  <script src="/shared/vendor/SplitText.min.js"></script>
+  <script src="/shared/vendor/CustomEase.min.js"></script>
+  <script src="/shared/vendor/lenis.min.js"></script>
+  <script src="/shared/vendor/lucide.min.js"></script>
+  <script src="/v1/assets/js/site.js"></script>
+  <script src="/v1/assets/js/pages.js"></script>
+</body>
+</html>

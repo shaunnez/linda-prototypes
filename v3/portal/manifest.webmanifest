@@ -1,0 +1,10 @@
+{
+  "name": "Linda’s Dog Training · Portal",
+  "short_name": "Linda Portal",
+  "start_url": "/v3/portal/index.html#/dogs",
+  "scope": "/v3/portal/",
+  "display": "standalone",
+  "background_color": "#F6F6F2",
+  "theme_color": "#F6F6F2",
+  "description": "Your dog’s private training history — prototype."
+}

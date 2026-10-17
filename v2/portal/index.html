@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Dogs · Linda's Dog Training</title>
+<meta name="description" content="Your private dog training portal: sessions, videos, notes and homework.">
+<meta name="theme-color" content="#FFF6E9">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%23FF5A36' stroke='%231B1B1B' stroke-width='3'/%3E%3Cg transform='translate(8 8)' fill='%231B1B1B'%3E%3Cpath d='M16 15.2c-4.4 0-8.8 5.3-8.8 9 0 2.7 2.2 3.8 4.4 3.8 1.8 0 3-.9 4.4-.9s2.6.9 4.4.9c2.2 0 4.4-1.1 4.4-3.8 0-3.7-4.4-9-8.8-9z'/%3E%3Cellipse cx='6.6' cy='13.4' rx='2.9' ry='3.7'/%3E%3Cellipse cx='12.2' cy='7.8' rx='2.9' ry='3.9'/%3E%3Cellipse cx='19.8' cy='7.8' rx='2.9' ry='3.9'/%3E%3Cellipse cx='25.4' cy='13.4' rx='2.9' ry='3.7'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..700&display=swap">
+<link rel="stylesheet" href="/v2/assets/css/tokens.css">
+<link rel="stylesheet" href="/v2/assets/css/base.css">
+<link rel="stylesheet" href="/v2/assets/css/components.css">
+<link rel="stylesheet" href="/v2/assets/css/app.css">
+<link rel="stylesheet" href="/v2/assets/css/portal.css">
+<script>(function(d){d.classList.add('js');try{if(sessionStorage.getItem('v2:pt'))d.classList.add('pt-in')}catch(e){}})(document.documentElement)</script>
+</head>
+<body class="app" data-app="portal">
+<a class="skip-link" href="#view">Skip to content</a>
+<div class="shell">
+  <aside class="side" aria-label="Portal navigation">
+    <div class="side-in">
+      <a class="brand" href="/v2/index.html" data-brand></a>
+      <div class="side-label">Your training</div>
+      <nav aria-label="Main" style="display:grid;gap:4px">
+        <a class="nav-item" href="#/dogs" data-nav="dogs"><span class="ni"><i data-lucide="dog"></i></span>My Dogs</a>
+        <a class="nav-item" href="#/sessions" data-nav="sessions"><span class="ni"><i data-lucide="calendar-days"></i></span>Sessions</a>
+        <a class="nav-item" href="#/homework" data-nav="homework"><span class="ni"><i data-lucide="list-checks"></i></span>Homework<span class="count" data-hw-count hidden></span></a>
+        <a class="nav-item" href="#/library" data-nav="library"><span class="ni"><i data-lucide="book-open"></i></span>Training Library</a>
+        <a class="nav-item" href="#/account" data-nav="account"><span class="ni"><i data-lucide="user-round"></i></span>Account</a>
+      </nav>
+      <div class="side-label">Coming soon</div>
+      <a class="nav-item" href="#/coming-soon" data-nav="soon"><span class="ni"><i data-lucide="sparkles"></i></span>Dog profile<span class="pill pill--sun soon">Phase 3</span></a>
+      <div class="side-foot">
+        <div class="side-user" data-side-user></div>
+        <a class="btn btn--sm btn--outline" href="/v2/admin/index.html"><i data-lucide="repeat"></i>Switch to trainer demo</a>
+      </div>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <span class="tb-title">My Dogs</span>
+      <button class="search-trigger" type="button" data-cmdk aria-label="Search"><i data-lucide="search"></i><span>Search videos, sessions, guides…</span><span class="kbd">⌘K</span></button>
+      <div class="tb-actions">
+        <button class="hh-switch" type="button" data-hh aria-haspopup="menu"></button>
+      </div>
+    </header>
+    <main class="view" id="view" tabindex="-1"></main>
+  </div>
+</div>
+<nav class="tabbar" aria-label="Portal tabs">
+  <a href="#/dogs" data-nav="dogs"><span class="tbi"><i data-lucide="dog"></i></span>My Dogs</a>
+  <a href="#/sessions" data-nav="sessions"><span class="tbi"><i data-lucide="calendar-days"></i></span>Sessions</a>
+  <a href="#/homework" data-nav="homework"><span class="tbi"><i data-lucide="list-checks"></i></span>Homework<span class="count tb-count" data-hw-count hidden></span></a>
+  <a href="#/library" data-nav="library"><span class="tbi"><i data-lucide="book-open"></i></span>Library</a>
+  <a href="#/account" data-nav="account"><span class="tbi"><i data-lucide="user-round"></i></span>Account</a>
+</nav>
+<script src="/shared/vendor/gsap.min.js"></script>
+<script src="/shared/vendor/lucide.min.js"></script>
+<script src="/shared/data.js"></script>
+<script src="/v2/assets/js/core.js"></script>
+<script src="/v2/assets/js/app.js"></script>
+<script src="/v2/assets/js/portal.js"></script>
+</body>
+</html>

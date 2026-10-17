@@ -1,0 +1,93 @@
+/* =========================================================
+   PAWS & PLAY — design tokens (shared by site, portal, admin)
+   ========================================================= */
+:root {
+  /* Palette */
+  --cream: #FFF6E9;
+  --cream-2: #FCEBD3;
+  --paper: #FFFFFF;
+  --ink: #1B1B1B;
+  --ink-2: #3B3631;
+  --ink-soft: #5E5750;
+  --muted: #7A7066;
+  --line: #1B1B1B;
+  --line-soft: rgba(27, 27, 27, .14);
+
+  --tomato: #FF5A36;
+  --tomato-deep: #D63A18;
+  --tomato-tint: #FFE1D8;
+  --sun: #FFC93C;
+  --sun-tint: #FFF0C2;
+  --grass: #1F7A4D;
+  --grass-tint: #D5F0DF;
+  --sky: #8EC5FF;
+  --sky-tint: #DDEEFF;
+  --blush: #FFD6C9;
+  --lilac: #CDB8FF;
+  --lilac-tint: #ECE4FF;
+
+  /* Type */
+  --font-display: "Bricolage Grotesque", "DM Sans", system-ui, sans-serif;
+  --font-ui: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-xs: .75rem;
+  --fs-sm: .875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: clamp(1.25rem, 1.1rem + .6vw, 1.5rem);
+  --fs-2xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem);
+  --fs-3xl: clamp(2.1rem, 1.5rem + 2.6vw, 3.5rem);
+  --fs-4xl: clamp(2.6rem, 1.6rem + 4.6vw, 5.5rem);
+  --fs-hero: clamp(3.1rem, 1.2rem + 8.4vw, 9.5rem);
+  --fs-giant: clamp(5rem, 2rem + 18vw, 22rem);
+
+  /* Shape */
+  --r-xs: 10px;
+  --r-sm: 14px;
+  --r-md: 20px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+  --bw: 2px;
+  --border: var(--bw) solid var(--ink);
+
+  /* Chunky offset shadows */
+  --sh-xs: 2px 2px 0 var(--ink);
+  --sh-sm: 4px 4px 0 var(--ink);
+  --sh: 6px 6px 0 var(--ink);
+  --sh-lg: 10px 10px 0 var(--ink);
+  --sh-soft: 0 18px 40px -18px rgba(27, 27, 27, .35);
+
+  /* Spacing */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 140px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --maxw: 1360px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --ease-squish: cubic-bezier(.5, 1.8, .4, .8);
+  --t-fast: .16s;
+  --t: .28s;
+
+  /* Safe areas */
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+
+  color-scheme: light;
+}
+
+/* Colour utility classes (backgrounds) */
+.bg-cream { background: var(--cream); }
+.bg-paper { background: var(--paper); }
+.bg-ink { background: var(--ink); color: var(--cream); }
+.bg-tomato { background: var(--tomato); }
+.bg-sun { background: var(--sun); }
+.bg-grass { background: var(--grass); color: #fff; }
+.bg-sky { background: var(--sky); }
+.bg-blush { background: var(--blush); }
+.bg-lilac { background: var(--lilac); }
+.bg-tomato-tint { background: var(--tomato-tint); }
+.bg-sun-tint { background: var(--sun-tint); }
+.bg-grass-tint { background: var(--grass-tint); }
+.bg-sky-tint { background: var(--sky-tint); }

@@ -1,0 +1,138 @@
+/* ==========================================================================
+   V3 · FIELD NOTES — design tokens
+   Shared by marketing, client portal and trainer admin.
+   ========================================================================== */
+:root {
+  /* Raw palette */
+  --paper: #F6F6F2;
+  --white: #FFFFFF;
+  --graphite: #111214;
+  --graphite-2: #1A1B1E;
+  --grey: #6B6F76;
+  --grey-2: #9A9DA3;
+  --hair: #D9DAD5;
+  --hair-soft: #E6E6E1;
+  --lime: #D4FF3A;
+  --lime-deep: #B8E61E;
+  --kawa: #2F6B4F;
+
+  /* Type */
+  --font-display: "Inter Tight", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-ui: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --track-display: -0.04em;
+  --track-tight: -0.02em;
+  --track-mono: 0.08em;
+
+  /* Scale */
+  --fs-mono: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 15px;
+  --fs-md: 17px;
+  --fs-lg: 20px;
+  --fs-xl: clamp(24px, 2.4vw, 32px);
+  --fs-2xl: clamp(32px, 4vw, 52px);
+  --fs-3xl: clamp(44px, 6.4vw, 96px);
+  --fs-4xl: clamp(56px, 10vw, 168px);
+
+  /* Radius */
+  --r-card: 20px;
+  --r-md: 14px;
+  --r-sm: 10px;
+  --r-xs: 6px;
+  --r-pill: 999px;
+
+  /* Space */
+  --gutter: clamp(16px, 4vw, 48px);
+  --section: clamp(96px, 14vw, 200px);
+  --max: 1440px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-io: cubic-bezier(.65, 0, .35, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --t-fast: 160ms;
+  --t-med: 320ms;
+  --t-slow: 700ms;
+
+  /* Semantic (light) */
+  --bg: var(--paper);
+  --surface: var(--white);
+  --surface-2: #FBFBF8;
+  --sunken: #EFEFEA;
+  --text: var(--graphite);
+  --text-2: var(--grey);
+  --text-3: var(--grey-2);
+  --line: var(--hair);
+  --line-soft: var(--hair-soft);
+  --accent: var(--lime);
+  --on-accent: var(--graphite);
+  --ink-btn: var(--graphite);
+  --on-ink-btn: #FFFFFF;
+  --success: var(--kawa);
+  --success-bg: rgba(47, 107, 79, .10);
+  --warn: #8A5A00;
+  --warn-bg: rgba(226, 160, 40, .16);
+  --danger: #B42318;
+  --danger-bg: rgba(180, 35, 24, .08);
+  --info: #2E4FC7;
+  --info-bg: rgba(46, 79, 199, .08);
+  --glass: rgba(246, 246, 242, .72);
+  --glass-strong: rgba(255, 255, 255, .86);
+  --scrim: rgba(17, 18, 20, .38);
+
+  --shadow-1: 0 1px 2px rgba(17, 18, 20, .04), 0 6px 18px -10px rgba(17, 18, 20, .14);
+  --shadow-2: 0 2px 4px rgba(17, 18, 20, .03), 0 18px 40px -20px rgba(17, 18, 20, .22);
+  --shadow-long: 0 2px 4px rgba(17, 18, 20, .03), 0 30px 60px -30px rgba(17, 18, 20, .25), 0 80px 140px -70px rgba(17, 18, 20, .35);
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--graphite), 0 0 0 7px var(--lime);
+
+  color-scheme: light;
+}
+
+/* App dark mode (toggle persisted in localStorage → html[data-theme]) */
+[data-theme="dark"] {
+  --bg: #0B0C0D;
+  --surface: #131416;
+  --surface-2: #17181B;
+  --sunken: #0E0F11;
+  --text: #EDEDE8;
+  --text-2: #9A9EA5;
+  --text-3: #686C73;
+  --line: #26282C;
+  --line-soft: #1D1F22;
+  --ink-btn: #EDEDE8;
+  --on-ink-btn: #0B0C0D;
+  --success: #6CCB98;
+  --success-bg: rgba(108, 203, 152, .12);
+  --warn: #F2C063;
+  --warn-bg: rgba(242, 192, 99, .12);
+  --danger: #FF8A7A;
+  --danger-bg: rgba(255, 138, 122, .10);
+  --info: #8EA6FF;
+  --info-bg: rgba(142, 166, 255, .10);
+  --glass: rgba(11, 12, 13, .72);
+  --glass-strong: rgba(19, 20, 22, .9);
+  --scrim: rgba(0, 0, 0, .6);
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, .03) inset, 0 8px 24px -12px rgba(0, 0, 0, .6);
+  --shadow-2: 0 1px 0 rgba(255, 255, 255, .04) inset, 0 24px 48px -24px rgba(0, 0, 0, .7);
+  --shadow-long: 0 40px 100px -40px rgba(0, 0, 0, .8);
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--lime);
+  color-scheme: dark;
+}
+
+/* Pitch-black cinematic sections on marketing pages */
+.is-dark {
+  --bg: #08090A;
+  --surface: #121315;
+  --surface-2: #17181B;
+  --text: #F2F2EE;
+  --text-2: #9A9EA5;
+  --text-3: #5F636A;
+  --line: #24262A;
+  --line-soft: #1A1C1F;
+  --ink-btn: #F2F2EE;
+  --on-ink-btn: #08090A;
+  --focus-ring: 0 0 0 2px #08090A, 0 0 0 4px var(--lime);
+  color-scheme: dark;
+}

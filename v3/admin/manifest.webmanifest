@@ -1,0 +1,10 @@
+{
+  "name": "Linda · Trainer workspace",
+  "short_name": "Linda Trainer",
+  "start_url": "/v3/admin/index.html#/dashboard",
+  "scope": "/v3/admin/",
+  "display": "standalone",
+  "background_color": "#F6F6F2",
+  "theme_color": "#111214",
+  "description": "Record, review and share training videos — prototype."
+}
